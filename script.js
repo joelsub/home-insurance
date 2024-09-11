@@ -8,7 +8,7 @@ const properties = [
       location: "Independencia",
       price: "UF 3.332",
       projectName: "Activa Plaza Chacabuco",
-      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageUrl: "https://plus.unsplash.com/premium_photo-1683133660598-3ebeb26769ba?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Casa",
@@ -111,7 +111,7 @@ function loadProperties() {
               <div class="property-image">
                   <img src="${property.imageUrl}" alt="${property.type}">
                   <span class="property-location"><i class="fas fa-map-marker-alt"></i> ${property.location}</span>
-                  <span class="property-type">${property.type}</span>
+                  <span class="property-type">${property.type} | ${property.year}</span>
               </div>
               <div class="property-info">
                     
