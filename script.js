@@ -1,10 +1,10 @@
-// Add event listener to the form
+// listener para el form
 document.getElementById("quoteForm").addEventListener("submit", function (event) {
-    // Prevent form submission from refreshing the page
+    // previene default del form button
     event.preventDefault();
     console.log("Form submitted!");
   
-    // Get form values
+    // obtiene valores del form
     const homeType = document.getElementById("homeType").value;
     const year = document.getElementById("year").value;
     const insuranceType = document.getElementById("insuranceType").value;
@@ -17,50 +17,50 @@ document.getElementById("quoteForm").addEventListener("submit", function (event)
       quotePrice = Math.floor(400 + (2024 - year) * 8);
     }
   
-    // Display the quote result
+    // muestra el resultado del formulario
     document.getElementById("quote-result").innerHTML = `
-      <p>Home Type: ${homeType}</p>
-      <p>Year: ${year}</p>
-      <p>Insurance Type: ${insuranceType}</p>
-      <p><strong>Your Quote: $${quotePrice} per year</strong></p>
+      <p>Tipo de casa: ${homeType}</p>
+      <p>Año de la propiedad: ${year}</p>
+      <p>Tipo de cobertura: ${insuranceType}</p>
+      <p><strong>Presupuesto: $${quotePrice} por año</strong></p>
     `;
   
-    // Display insurance details based on the selected type
+    // muestra el resultado del seguro contratado
     showInsuranceDetails(insuranceType);
   });
   
-  // Function to show insurance details
+  // carga detalles via html
   function showInsuranceDetails(insuranceType) {
     const detailsSection = document.getElementById("insurance-details");
   
     let detailsHTML = "";
     if (insuranceType === "basic") {
-      detailsHTML = `
-        <h3>Basic Insurance Details</h3>
-        <p>Our basic insurance offers essential coverage for your property at an affordable price. This plan includes:</p>
-        <ul>
-          <li>Fire and Smoke Damage</li>
-          <li>Water Leak Protection</li>
-          <li>Basic Theft Coverage</li>
-          <li>Legal Assistance</li>
-        </ul>
-      `;
-    } else {
-      detailsHTML = `
-        <h3>Full Insurance Details</h3>
-        <p>Our full insurance plan provides comprehensive coverage, ensuring maximum protection for your home. This plan includes:</p>
-        <ul>
-          <li>Fire and Smoke Damage</li>
-          <li>Water Leak Protection</li>
-          <li>Comprehensive Theft and Burglary Coverage</li>
-          <li>Natural Disaster Protection (Earthquake, Floods, etc.)</li>
-          <li>Accidental Damage Protection</li>
-          <li>Full Legal Assistance</li>
-        </ul>
-      `;
-    }
+        detailsHTML = `
+          <h3>Detalles del Seguro Básico</h3>
+          <p>Nuestro seguro básico ofrece una cobertura esencial para tu propiedad a un precio asequible. Este plan incluye:</p>
+          <ul>
+            <li>Daños por fuego y humo</li>
+            <li>Protección contra fugas de agua</li>
+            <li>Cobertura básica contra robo</li>
+            <li>Asistencia legal</li>
+          </ul>
+        `;
+      } else {
+        detailsHTML = `
+          <h3>Detalles del Seguro Completo</h3>
+          <p>Nuestro plan de seguro completo proporciona una cobertura integral, garantizando la máxima protección para tu hogar. Este plan incluye:</p>
+          <ul>
+            <li>Daños por fuego y humo</li>
+            <li>Protección contra fugas de agua</li>
+            <li>Cobertura integral contra robo y allanamiento</li>
+            <li>Protección contra desastres naturales (terremotos, inundaciones, etc.)</li>
+            <li>Protección contra daños accidentales</li>
+            <li>Asistencia legal completa</li>
+          </ul>
+        `;
+      }
   
-    // Update the details section and show it
+    // muestra los detalles
     detailsSection.innerHTML = detailsHTML;
     detailsSection.classList.add("visible");
   }
