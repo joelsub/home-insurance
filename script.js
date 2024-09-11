@@ -7,7 +7,8 @@ const properties = [
       year: 2023,
       location: "Independencia",
       price: "UF 3.332",
-      projectName: "Activa Plaza Chacabuco"
+      projectName: "Activa Plaza Chacabuco",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Casa",
@@ -17,7 +18,8 @@ const properties = [
       year: 2021,
       location: "La Florida",
       price: "UF 6.500",
-      projectName: "Villa Los Robles"
+      projectName: "Villa Los Robles",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Terreno",
@@ -27,7 +29,8 @@ const properties = [
       year: 2020,
       location: "Colina",
       price: "UF 2.000",
-      projectName: "Parcelas del Sol"
+      projectName: "Parcelas del Sol",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Local Comercial",
@@ -37,7 +40,8 @@ const properties = [
       year: 2022,
       location: "Providencia",
       price: "UF 4.500",
-      projectName: "Comercial Plaza Central"
+      projectName: "Comercial Plaza Central",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Departamento",
@@ -47,7 +51,8 @@ const properties = [
       year: 2020,
       location: "Las Condes",
       price: "UF 3.100",
-      projectName: "Residencial Alto Las Condes"
+      projectName: "Residencial Alto Las Condes",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Casa",
@@ -57,7 +62,8 @@ const properties = [
       year: 2020,
       location: "Ñuñoa",
       price: "UF 9.500",
-      projectName: "Condominio Ñuñoa"
+      projectName: "Condominio Ñuñoa",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Terreno",
@@ -67,7 +73,8 @@ const properties = [
       year: 2021,
       location: "Pudahuel",
       price: "UF 1.800",
-      projectName: "Terrenos Pudahuel Norte"
+      projectName: "Terrenos Pudahuel Norte",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Departamento",
@@ -77,7 +84,8 @@ const properties = [
       year: 2022,
       location: "Santiago Centro",
       price: "UF 4.000",
-      projectName: "Residencial Santiago Centro"
+      projectName: "Residencial Santiago Centro",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
       type: "Local Comercial",
@@ -87,7 +95,8 @@ const properties = [
       year: 2023,
       location: "Vitacura",
       price: "UF 5.200",
-      projectName: "Comercial Vitacura Norte"
+      projectName: "Comercial Vitacura Norte",
+      imageUrl: "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
@@ -100,7 +109,7 @@ function loadProperties() {
       const cardHTML = `
           <div class="property-card">
               <div class="property-image">
-                  <img src="https://via.placeholder.com/300x200" alt="${property.type}">
+                  <img src="${property.imageUrl}" alt="${property.type}">
                   <span class="property-location"><i class="fas fa-map-marker-alt"></i> ${property.location}</span>
                   <span class="property-type">${property.type}</span>
               </div>
