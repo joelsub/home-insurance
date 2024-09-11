@@ -1,3 +1,131 @@
+const properties = [
+  {
+      type: "Departamento",
+      rooms: 2,
+      bathrooms: 2,
+      size: "55 m²",
+      year: 2023,
+      location: "Independencia",
+      price: "UF 3.332",
+      projectName: "Activa Plaza Chacabuco"
+  },
+  {
+      type: "Casa",
+      rooms: 3,
+      bathrooms: 3,
+      size: "120 m²",
+      year: 2021,
+      location: "La Florida",
+      price: "UF 6.500",
+      projectName: "Villa Los Robles"
+  },
+  {
+      type: "Terreno",
+      rooms: 0,
+      bathrooms: 0,
+      size: "500 m²",
+      year: 2020,
+      location: "Colina",
+      price: "UF 2.000",
+      projectName: "Parcelas del Sol"
+  },
+  {
+      type: "Local Comercial",
+      rooms: 0,
+      bathrooms: 1,
+      size: "70 m²",
+      year: 2022,
+      location: "Providencia",
+      price: "UF 4.500",
+      projectName: "Comercial Plaza Central"
+  },
+  {
+      type: "Departamento",
+      rooms: 1,
+      bathrooms: 1,
+      size: "40 m²",
+      year: 2020,
+      location: "Las Condes",
+      price: "UF 3.100",
+      projectName: "Residencial Alto Las Condes"
+  },
+  {
+      type: "Casa",
+      rooms: 4,
+      bathrooms: 3,
+      size: "200 m²",
+      year: 2020,
+      location: "Ñuñoa",
+      price: "UF 9.500",
+      projectName: "Condominio Ñuñoa"
+  },
+  {
+      type: "Terreno",
+      rooms: 0,
+      bathrooms: 0,
+      size: "1000 m²",
+      year: 2021,
+      location: "Pudahuel",
+      price: "UF 1.800",
+      projectName: "Terrenos Pudahuel Norte"
+  },
+  {
+      type: "Departamento",
+      rooms: 3,
+      bathrooms: 2,
+      size: "75 m²",
+      year: 2022,
+      location: "Santiago Centro",
+      price: "UF 4.000",
+      projectName: "Residencial Santiago Centro"
+  },
+  {
+      type: "Local Comercial",
+      rooms: 0,
+      bathrooms: 1,
+      size: "50 m²",
+      year: 2023,
+      location: "Vitacura",
+      price: "UF 5.200",
+      projectName: "Comercial Vitacura Norte"
+  }
+];
+
+
+function loadProperties() {
+  const propertyGrid = document.getElementById('property-grid');
+  propertyGrid.innerHTML = '';
+
+  properties.forEach((property) => {
+      const cardHTML = `
+          <div class="property-card">
+              <div class="property-image">
+                  <img src="https://via.placeholder.com/300x200" alt="${property.type}">
+                  <span class="property-location"><i class="fas fa-map-marker-alt"></i> ${property.location}</span>
+                  <span class="property-type">${property.type}</span>
+              </div>
+              <div class="property-info">
+                    
+                    <h3>${property.projectName}</h3>
+                    
+                    <div class="property-tags">
+                      <span class="tag"><i class="fas fa-bed"></i> ${property.rooms}</span>
+                      <span class="tag"><i class="fas fa-bath"></i> ${property.bathrooms}</span>
+                      <span class="tag"><i class="fas fa-ruler-combined"></i> ${property.size}</span>
+                    </div>
+                    
+                    <p><strong>Precio:</strong> ${property.price}</p>
+                    <button class="cta-btn detail">Ver Detalles</button>
+                </div>
+          </div>
+      `;
+      propertyGrid.innerHTML += cardHTML;
+  });
+}
+
+document.addEventListener("DOMContentLoaded", loadProperties);
+
+
 // Listener para el form
 document.getElementById("quoteForm").addEventListener("submit", function (event) {
     // Prevenir la recarga de la página al enviar el formulario
