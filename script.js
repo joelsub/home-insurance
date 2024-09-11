@@ -1,38 +1,41 @@
-// listener para el form
+// Listener para el form
 document.getElementById("quoteForm").addEventListener("submit", function (event) {
-    // previene default del form button
+    // Prevenir la recarga de la página al enviar el formulario
     event.preventDefault();
-    console.log("Form submitted!");
-  
-    // obtiene valores del form
+
+    // Obtener los valores del formulario
     const homeType = document.getElementById("homeType").value;
     const year = document.getElementById("year").value;
     const insuranceType = document.getElementById("insuranceType").value;
-  
-    // Generate a simple quote
+
+    // Generar un presupuesto simple
     let quotePrice;
     if (insuranceType === "basic") {
-      quotePrice = Math.floor(200 + (2024 - year) * 5);
+        quotePrice = Math.floor(200 + (2024 - year) * 5);
     } else {
-      quotePrice = Math.floor(400 + (2024 - year) * 8);
+        quotePrice = Math.floor(400 + (2024 - year) * 8);
     }
-  
-    // muestra el resultado del formulario
-    document.getElementById("quote-result").innerHTML = `
+
+    // Mostrar el resultado de la cotización
+    const quoteResultHTML = `
       <p>Tipo de casa: ${homeType}</p>
       <p>Año de la propiedad: ${year}</p>
       <p>Tipo de cobertura: ${insuranceType}</p>
       <p><strong>Presupuesto: $${quotePrice} por año</strong></p>
     `;
-  
-    // muestra el resultado del seguro contratado
+    document.getElementById("quote-result").innerHTML = quoteResultHTML;
+
+    // Mostrar el resultado de los detalles del seguro
     showInsuranceDetails(insuranceType);
-  });
-  
-  // carga detalles via html
-  function showInsuranceDetails(insuranceType) {
+
+    // Hacer visible la sección de resultados y detalles del seguro
+    document.getElementById("quote-details").classList.add("visible");
+});
+
+// Función para cargar los detalles del seguro
+function showInsuranceDetails(insuranceType) {
     const detailsSection = document.getElementById("insurance-details");
-  
+
     let detailsHTML = "";
     if (insuranceType === "basic") {
         detailsHTML = `
@@ -45,7 +48,7 @@ document.getElementById("quoteForm").addEventListener("submit", function (event)
             <li>Asistencia legal</li>
           </ul>
         `;
-      } else {
+    } else {
         detailsHTML = `
           <h3>Detalles del Seguro Completo</h3>
           <p>Nuestro plan de seguro completo proporciona una cobertura integral, garantizando la máxima protección para tu hogar. Este plan incluye:</p>
@@ -58,10 +61,8 @@ document.getElementById("quoteForm").addEventListener("submit", function (event)
             <li>Asistencia legal completa</li>
           </ul>
         `;
-      }
-  
-    // muestra los detalles
+    }
+
+    // Mostrar los detalles del seguro
     detailsSection.innerHTML = detailsHTML;
-    detailsSection.classList.add("visible");
-  }
-  
+}
