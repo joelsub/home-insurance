@@ -103,11 +103,19 @@
   
   .trusted-brands h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   
+  .brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
   .brands img {
     margin: 0 1rem;
+    max-height: 30px;
+    filter: grayscale(100%);
   }
   
   /* beneficios */
