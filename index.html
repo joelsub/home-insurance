@@ -48,8 +48,8 @@
                     </div>
                     <div class="text-column">
                         <h2>Nuestra Promesa para Ti</h2>
-                        <p>Prometemos ofrecerte las mejores propiedades, adaptadas a tus necesidades y presupuesto. 
-                            Nuestro compromiso es brindarte un servicio de calidad, con transparencia y confianza en 
+                        <p>Prometemos ofrecerte las mejores propiedades, adaptadas a tus necesidades y presupuesto.
+                            Nuestro compromiso es brindarte un servicio de calidad, con transparencia y confianza en
                             cada paso del proceso de compra o arriendo de tu nuevo hogar.</p>
                         <a href="#quote-section" class="cta-btn">Saber Más</a>
                     </div>
@@ -65,6 +65,46 @@
                 </div>
             </section>
 
+
+            <!-- Beneficios -->
+            <section class="benefits">
+                <div class="container">
+                    <h2>¿Por qué elegir nuestro servicio?</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <i class="fas fa-dollar-sign fa-3x"></i>
+                            <h3>Inversionista</h3>
+                            <p>
+                                Podrás reservar unidades con descuentos exclusivos. No dejes pasar esta oportunidad.
+                            </p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-magnifying-glass"></i>
+                            <h3>Encontrar</h3>
+                            <p>
+                                Encuentra y selecciona la propiedad que necesitas.
+                            </p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-home fa-3x"></i>
+                            <h3>Subsidio</h3>
+                            <p>
+                                Contamos con una exclusiva selección de proyectos con subsidio habitacional en todo
+                                Chile.
+                            </p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-dollar-sign fa-3x"></i>
+                            <h3>Financiamiento</h3>
+                            <p>
+                                Simula tu crédito hipotecario. En TIKITAKA te asesoramos para encontrar tu mejor
+                                alternativa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- marcas que confían -->
             <section class="trusted-brands">
                 <div class="container">
@@ -77,36 +117,6 @@
                         <img src="https://cdn.brandfetch.io/samsung.com/w/512/h/78/logo" alt="Marca 5">
                         <img src="https://cdn.brandfetch.io/youtube.com/w/512/h/114/logo" alt="Marca 6">
                         <img src="https://cdn.brandfetch.io/tasteofhome.com/w/512/h/312/logo" alt="Marca 7">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Beneficios -->
-            <section class="benefits">
-                <div class="container">
-                    <h2>¿Por qué elegir nuestro servicio?</h2>
-                    <div class="benefits-grid">
-                        <div class="benefit-card">
-                            <i class="fas fa-magnifying-glass"></i>
-                            <h3>Encontrar</h3>
-                            <p>
-                                Encuentra y selecciona la propiedad que necesitas.
-                            </p>
-                        </div>
-                        <div class="benefit-card">
-                            <i class="fas fa-home fa-3x"></i>
-                            <h3>Subsidio</h3>
-                            <p>
-                                Contamos con una exclusiva selección de proyectos con subsidio habitacional en todo Chile.
-                            </p>
-                        </div>
-                        <div class="benefit-card">
-                            <i class="fas fa-dollar-sign fa-3x"></i>
-                            <h3>Financiamiento</h3>
-                            <p>
-                                Simula tu crédito hipotecario. En TIKITAKA te asesoramos para encontrar tu mejor alternativa.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -184,7 +194,8 @@
                 <i class="fas fa-times"></i>
             </div>
             <div class="modal-banner">
-                <img id="modal-banner-image" src="" alt="Imagen de la Propiedad" />
+                <img id="modal-banner-image" src="" alt="Imagen de la Propiedad"/>
+                <div id="property-modal-details" class="property-modal-details"></div>
             </div>
 
             <div class="modal-body">
@@ -194,12 +205,13 @@
                 </div>
                 <div class="insurance-details-grid">
                     <div id="basic-insurance" class="insurance-card"></div>
-                    <div id="full-insurance" class="insurance-card"></div>
+                    <div id="full-insurance" class="insurance-card">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
 
     <script src="script.js"></script>
