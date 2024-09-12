@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const propertyModal = document.getElementById('propertyModal');
   const modalTitle = document.getElementById('modal-title');
   const propertyDescription = document.getElementById('property-description');
-  const modalBannerImage = document.getElementById('modal-banner-image'); // Referencia a la imagen del banner
+  const modalBannerImage = document.getElementById('modal-banner-image');
   const basicInsurance = document.getElementById('basic-insurance');
   const fullInsurance = document.getElementById('full-insurance');
   const span = document.getElementsByClassName("close")[0];
