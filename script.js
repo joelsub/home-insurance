@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
     propertyModalDetails.innerHTML = `
     <div class="property-tags">
     <span><i class="fas fa-map-marker-alt"></i> ${property.location}</span>
-      <span>${property.type} ${property.year}</span>
+      <span>${property.type}s ${property.year}</span>
     </div>
     <div class="property-tags">
         <span class="tag"><i class="fas fa-bed"></i> ${property.rooms}</span>
@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
       `;
 
-    propertyModal.style.display = "block";
+    propertyModal.style.display = "grid";
   }
 
   // Cerrar modal 
