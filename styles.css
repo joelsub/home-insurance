@@ -21,6 +21,11 @@
       align-items: center;
   }
 
+  .logo{
+    font-size: 1.1rem;
+    letter-spacing: 2px !important;
+  }
+
   .navbar .container {
       display: flex;
       justify-content: space-between;
@@ -54,7 +59,7 @@
   }
 
   .cta-btn {
-      background-color: #ffab0f;
+      background-color: #358665;
       color: white;
       padding: 0.5rem 1.5rem;
       border: none;
@@ -67,7 +72,7 @@
   }
 
   .cta-btn:hover {
-      background-color: #e64a19;
+      background-color: #5fae8f;
   }
 
   /* Hero */
@@ -132,7 +137,7 @@
   /* beneficios */
   .benefits {
       padding: 3rem 0;
-      background-color: #f1f1f1;
+      /* background-color: #f1f1f1; */
       text-align: center;
   }
 
@@ -145,9 +150,10 @@
 
   .benefit-card {
       background-color: white;
-      padding: 2rem;
+      padding: 1rem;
       border-radius: 8px;
       text-align: center;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   }
 
   .benefit-card img {
@@ -155,36 +161,50 @@
   }
 
   .benefit-card h3 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
+      /* margin-bottom: 1rem; */
+      font-size: 1.2rem;
+      color: #358665;
   }
 
   .benefit-card .fas {
-      font-size: 2rem !important;
+      font-size: 1.5rem !important;
+      color: #358665;
   }
 
   /* promesa */
   .our-promise {
-      padding: 3rem 0;
+      height: fit-content;
 
+  }
+  .our-promise .container {
+      padding: 3rem 0;
+      height: fit-content;
+      padding: 0 !important;
+     overflow: hidden;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+     border-radius: 16px;
   }
 
   .our-promise .text-column {
       display: flex;
       flex-direction: column;
       gap: 1rem !important;
+      padding: 1rem;
+  }
+  .our-promise .image-column {
+      display: flex;
   }
 
   .two-columns {
       display: grid;
       grid-template-columns: .6fr 1fr;
-      gap: 2rem;
+      gap: 1rem;
       align-items: center;
   }
 
   .two-columns img {
       width: 100%;
-      border-radius: 8px;
+      /* border-radius: 8px; */
   }
 
   .two-columns .text-column {
@@ -193,8 +213,22 @@
 
   /* seguro form */
   .quote-section {
-      padding: 3rem 0;
-      background-color: #f8f8f8;
+      /* padding: 3rem 0; */
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+  .quote-section .image-column {
+      display: flex;
+  }
+  .quote-section .container .image-column{
+        min-height: 100% !important;
+  }
+  .quote-section .container .image-column img{
+        object-fit: cover;
+  }
+  .quote-section .form-column{
+        padding: 1rem;
   }
 
   .form-group {
@@ -307,14 +341,19 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+    position: relative;
+    box-sizing: border-box !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .property-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .property-image {
     position: relative !important;
+    display: flex;
 }
 .property-image img {
     width: 100%;
@@ -324,7 +363,12 @@
 }
 
 .property-info {
-    padding: 20px;
+    padding: .8rem !important;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .property-info h3 {
@@ -344,7 +388,8 @@
     width: 100%;
 }
 .property-tags .tag {
-    font-size: .8rem !important;
+    font-size: .7rem !important;
+    margin-bottom: 1rem;
 }
 
 .property-info .cta-btn {
@@ -357,12 +402,16 @@
 }
 
 .property-location{
-    font-size: .8rem !important; 
+    font-size: .7rem !important; 
     position: absolute;
     top: 8px;
     left: 8px;
     z-index: 2;
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
+    background-color: #ffffffc4;
+    border-radius: 3px;
+    padding: .2rem !important;
+    font-weight: bold;
 }
 .property-type{
     position: absolute;
@@ -372,5 +421,76 @@
     background-color: #ffffffc4;
     border-radius: 3px;
     padding: .2rem !important;
-    font-size: .8rem !important;
+    font-size: .7rem !important;
+    font-weight: bold;
+}
+
+
+/* Modal  */
+.modal {
+    z-index: 3 !important;
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.insurance-details-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.insurance-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+}
+
+.insurance-card h3 {
+    margin-bottom: 10px;
+}
+
+.insurance-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.our-promise .container .image-column img {
+    min-height: 100% !important;
 }

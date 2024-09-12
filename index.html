@@ -14,14 +14,13 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Seguro</h1>
+            <h1 class="logo">TIKI TAKA</h1>
             <ul class="nav-links">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios de Seguro</a></li>
+                <li><a href="#">Propiedades</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-            <a href="#" class="cta-btn">Comenzar</a>
         </div>
     </nav>
 
@@ -30,7 +29,7 @@
         <div class="hero-content">
             <span class="title">Tu siguiente hogar a un solo clic de distancia</span>
             <p>¿Estás pensando en comprar o arrendar? Revisa las propiedades que seleccionamos para ti</p>
-            <a href="#quote-section" class="cta-btn">Obtener una Cotización</a>
+            <a href="#properties" class="cta-btn">Ver propiedades disponibles</a>
         </div>
     </section>
 
@@ -54,6 +53,15 @@
                 </div>
             </section>
 
+
+            <!-- cards propiedades  -->
+            <section id="properties" class="properties-section">
+                <div class="container">
+                    <h2>Propiedades Disponibles</h2>
+                    <div id="property-grid" class="property-grid"></div>
+                </div>
+            </section>
+
             <!-- marcas que confían -->
             <section class="trusted-brands">
                 <div class="container">
@@ -70,34 +78,30 @@
                 </div>
             </section>
 
-            <!-- cards propiedades  -->
-            <section class="properties-section">
-                <div class="container">
-                    <h2>Propiedades Disponibles</h2>
-                    <div id="property-grid" class="property-grid"></div>
-                </div>
-            </section>
-
             <!-- Beneficios -->
             <section class="benefits">
                 <div class="container">
                     <h2>¿Por qué elegir nuestro seguro?</h2>
                     <div class="benefits-grid">
                         <div class="benefit-card">
-                            <i class="fas fa-home fa-3x"></i>
-                            <h3>Cobertura Integral</h3>
-                            <p>Protege tu hogar y pertenencias de desastres naturales, accidentes y más.</p>
+                            <i class="fas fa-magnifying-glass"></i>
+                            <h3>Encontrar</h3>
+                            <p>
+                                Encuentra y selecciona la propiedad que necesitas.
+                            </p>
                         </div>
                         <div class="benefit-card">
-                            <i class="fas fa-headset fa-3x"></i>
-                            <h3>Soporte 24/7</h3>
-                            <p>Estamos aquí para ti en cualquier momento, cualquier día para ayudarte con tus
-                                necesidades de seguro.</p>
+                            <i class="fas fa-home fa-3x"></i>
+                            <h3>Subsidio</h3>
+                            <p>
+                                Contamos con una exclusiva selección de proyectos con subsidio habitacional en todo Chile.
+                            </p>
                         </div>
                         <div class="benefit-card">
                             <i class="fas fa-dollar-sign fa-3x"></i>
-                            <h3>Planes Asequibles</h3>
-                            <p>Obtén la mejor protección sin afectar tu presupuesto con nuestros precios competitivos.
+                            <h3>Financiamiento</h3>
+                            <p>
+                                Simula tu crédito hipotecario. En TOCTOC te asesoramos para encontrar tu mejor alternativa.
                             </p>
                         </div>
                     </div>
@@ -156,7 +160,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <h3>Seguro</h3>
+                <h3 class="logo">TIKI TAKA</h3>
                 <ul class="footer-links">
                     <li><a href="#">Política de Privacidad</a></li>
                     <li><a href="#">Términos del Servicio</a></li>
@@ -166,6 +170,24 @@
         </div>
         <p>&copy; 2024 Seguro. Todos los Derechos Reservados.</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Detalles de la Propiedad</h2>
+            <div class="modal-body">
+                <div class="property-description">
+                    <p id="property-description"></p>
+                </div>
+                <div class="insurance-details-grid">
+                    <div id="basic-insurance" class="insurance-card"></div>
+                    <div id="full-insurance" class="insurance-card"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
