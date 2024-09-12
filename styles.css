@@ -25,11 +25,15 @@
     font-size: 1.1rem;
     letter-spacing: 2px !important;
   }
+  .logo span{
+    margin-left: 6px;
+  }
 
   .navbar .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
   }
 
   .nav-links {
@@ -195,7 +199,14 @@
   }
   .our-promise .image-column {
       display: flex;
+      min-height: 100% !important;
   }
+
+  .our-promise .container .image-column img {
+    min-height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+}
 
   .two-columns {
       display: grid;
@@ -233,6 +244,10 @@
         padding: 1rem;
   }
 
+  .form-column h2{
+    margin-bottom: 2rem !important;
+  }
+
   .form-group {
       margin-bottom: 1.5rem;
   }
@@ -246,7 +261,7 @@
   .form-group input,
   .form-group select {
       width: 100%;
-      padding: 0.8rem;
+      padding: 0.4rem;
       border-radius: 8px;
       border: 1px solid #ccc;
       font-size: 1rem;
@@ -255,8 +270,12 @@
   /* Footer */
   .footer {
       background-color: #358665;
-      color: white;
+      color: #ffffff !important;
       padding: 2rem;
+  }
+
+  .footer .logo{
+    margin-bottom: 1rem !important;
   }
 
   .footer .container {
@@ -280,8 +299,9 @@
 
   .footer p {
       text-align: center;
-      margin-top: 2rem;
+      margin: 0 !important;
       font-size: 0.9rem;
+      color: #fff !important;
   }
 
   #quote-details {
@@ -488,8 +508,4 @@
 .insurance-card p {
     margin: 5px 0;
     font-size: 14px;
-}
-
-.our-promise .container .image-column img {
-    min-height: 100% !important;
 }

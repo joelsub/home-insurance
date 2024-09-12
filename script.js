@@ -174,6 +174,22 @@ function loadProperties() {
   });
 }
 
+// añade evento de scroll suave 
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (event) {
+      event.preventDefault();
+      const targetSection = document.querySelector(this.getAttribute('href'));
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+
 // abre el modal y calculo de seguros
 document.addEventListener("DOMContentLoaded", function () {
   const propertyModal = document.getElementById('propertyModal');
