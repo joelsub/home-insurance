@@ -54,8 +54,11 @@
   }
 
   .content {
-      padding: 2rem !important;
+      padding: 100px 2rem !important;
       max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
   }
 
   .cta-btn {
@@ -110,7 +113,6 @@
 
   /* marcas */
   .trusted-brands {
-      padding: 3rem 0;
       text-align: center;
       overflow: hidden;
   }
@@ -325,14 +327,11 @@
 }
 
 
-.properties-section {
-    padding: 50px 0;
-}
-
 .property-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .property-card {
