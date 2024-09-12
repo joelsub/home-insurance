@@ -1,173 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seguros</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Seguro</h1>
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios de Seguro</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <a href="#" class="cta-btn">Comenzar</a>
-        </div>
+      <div class="container">
+        <h1 class="logo">Seguro</h1>
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios de Seguro</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <a href="#" class="cta-btn">Comenzar</a>
+      </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-content">
-            <span class="title">Tu siguiente hogar a un solo clic de distancia</span>
-            <p>¿Estás pensando en comprar o arrendar? Revisa las propiedades que seleccionamos para ti</p>
-            <a href="#quote-section" class="cta-btn">Obtener una Cotización</a>
-        </div>
+      <div class="hero-content">
+        <span class="title">Tu siguiente hogar a un solo clic de distancia</span>
+        <p>¿Estás pensando en comprar o arrendar? Revisa las propiedades que seleccionamos para ti</p>
+        <a href="#quote-section" class="cta-btn">Obtener una Cotización</a>
+      </div>
     </section>
 
     <div class="wrap-content">
-        <div class="content">
+      <div class="content">
+        <!-- promesa -->
+        <section class="our-promise">
+          <div class="container two-columns">
+            <div class="image-column">
+              <img
+                src="https://images.pexels.com/photos/7415122/pexels-photo-7415122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Familia"
+              />
+            </div>
+            <div class="text-column">
+              <h2>Nuestra Promesa para Ti</h2>
+              <p>
+                Prometemos brindarte una cobertura de seguro de hogar confiable, asequible y completa que se ajuste a tus necesidades. Con
+                nuestra red confiable de socios, siempre estarás en buenas manos.
+              </p>
+              <a href="#quote-section" class="cta-btn">Saber Más</a>
+            </div>
+          </div>
+        </section>
 
-            <!-- promesa -->
-            <section class="our-promise">
-                <div class="container two-columns">
-                    <div class="image-column">
-                        <img src="https://images.pexels.com/photos/7415122/pexels-photo-7415122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Familia">
-                    </div>
-                    <div class="text-column">
-                        <h2>Nuestra Promesa para Ti</h2>
-                        <p>Prometemos brindarte una cobertura de seguro de hogar confiable, asequible y completa que se
-                            ajuste a tus necesidades. Con nuestra red confiable de socios, siempre estarás en buenas
-                            manos.</p>
-                        <a href="#quote-section" class="cta-btn">Saber Más</a>
-                    </div>
+        <!-- marcas que confían -->
+        <section class="trusted-brands">
+          <div class="container">
+            <h2>Confiado por los Mejores</h2>
+            <div class="brands">
+              <img src="https://cdn.brandfetch.io/apple.com/w/419/h/512/logo" alt="Marca 1" />
+              <img src="https://cdn.brandfetch.io/shopify.com/w/512/h/145/logo" alt="Marca 2" />
+              <img src="https://cdn.brandfetch.io/linear.app/w/512/h/128/logo" alt="Marca 3" />
+              <img src="https://cdn.brandfetch.io/dribbble.com/w/512/h/143/logo" alt="Marca 4" />
+              <img src="https://cdn.brandfetch.io/samsung.com/w/512/h/78/logo" alt="Marca 5" />
+              <img src="https://cdn.brandfetch.io/youtube.com/w/512/h/114/logo" alt="Marca 6" />
+              <img src="https://cdn.brandfetch.io/tasteofhome.com/w/512/h/312/logo" alt="Marca 7" />
+            </div>
+          </div>
+        </section>
+
+        <!-- cards propiedades  -->
+        <section class="properties-section">
+          <div class="container">
+            <h2 class="property-titles">Propiedades Disponibles</h2>
+            <div id="property-grid" class="property-grid"></div>
+          </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="benefits">
+          <div class="container">
+            <h2>¿Por qué elegir nuestro seguro?</h2>
+            <div class="benefits-grid">
+              <div class="benefit-card">
+                <i class="fas fa-home fa-3x"></i>
+                <h3>Cobertura Integral</h3>
+                <p>Protege tu hogar y pertenencias de desastres naturales, accidentes y más.</p>
+              </div>
+              <div class="benefit-card">
+                <i class="fas fa-headset fa-3x"></i>
+                <h3>Soporte 24/7</h3>
+                <p>Estamos aquí para ti en cualquier momento, cualquier día para ayudarte con tus necesidades de seguro.</p>
+              </div>
+              <div class="benefit-card">
+                <i class="fas fa-dollar-sign fa-3x"></i>
+                <h3>Planes Asequibles</h3>
+                <p>Obtén la mejor protección sin afectar tu presupuesto con nuestros precios competitivos.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- seguro -->
+        <section id="quote-section" class="quote-section">
+          <div class="container two-columns">
+            <div class="image-column">
+              <img
+                src="https://images.pexels.com/photos/4161619/pexels-photo-4161619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Hogar"
+              />
+            </div>
+            <div class="form-column">
+              <h2>Obtén tu Cotización de Seguro</h2>
+              <form id="quoteForm">
+                <div class="form-group">
+                  <label for="homeType">Tipo de Propiedad</label>
+                  <select id="homeType">
+                    <option value="home">Casa</option>
+                    <option value="apartment">Apartamento</option>
+                    <option value="land">Terreno</option>
+                    <option value="commercial">Local Comercial</option>
+                  </select>
                 </div>
-            </section>
 
-            <!-- marcas que confían -->
-            <section class="trusted-brands">
-                <div class="container">
-                    <h2>Confiado por los Mejores</h2>
-                    <div class="brands">
-                        <img src="https://cdn.brandfetch.io/apple.com/w/419/h/512/logo" alt="Marca 1">
-                        <img src="https://cdn.brandfetch.io/shopify.com/w/512/h/145/logo" alt="Marca 2">
-                        <img src="https://cdn.brandfetch.io/linear.app/w/512/h/128/logo" alt="Marca 3">
-                        <img src="https://cdn.brandfetch.io/dribbble.com/w/512/h/143/logo" alt="Marca 4">
-                        <img src="https://cdn.brandfetch.io/samsung.com/w/512/h/78/logo" alt="Marca 5">
-                        <img src="https://cdn.brandfetch.io/youtube.com/w/512/h/114/logo" alt="Marca 6">
-                        <img src="https://cdn.brandfetch.io/tasteofhome.com/w/512/h/312/logo" alt="Marca 7">
-                    </div>
+                <div class="form-group">
+                  <label for="year">Año de la Propiedad</label>
+                  <input type="number" id="year" placeholder="Ingresa el año de la propiedad" required />
                 </div>
-            </section>
 
-            <!-- cards propiedades  -->
-            <section class="properties-section">
-                <div class="container">
-                    <h2>Propiedades Disponibles</h2>
-                    <div id="property-grid" class="property-grid"></div>
+                <div class="form-group">
+                  <label for="insuranceType">Tipo de Seguro</label>
+                  <select id="insuranceType">
+                    <option value="basic">Seguro Básico</option>
+                    <option value="full">Seguro Completo</option>
+                  </select>
                 </div>
-            </section>
 
-            <!-- Beneficios -->
-            <section class="benefits">
-                <div class="container">
-                    <h2>¿Por qué elegir nuestro seguro?</h2>
-                    <div class="benefits-grid">
-                        <div class="benefit-card">
-                            <i class="fas fa-home fa-3x"></i>
-                            <h3>Cobertura Integral</h3>
-                            <p>Protege tu hogar y pertenencias de desastres naturales, accidentes y más.</p>
-                        </div>
-                        <div class="benefit-card">
-                            <i class="fas fa-headset fa-3x"></i>
-                            <h3>Soporte 24/7</h3>
-                            <p>Estamos aquí para ti en cualquier momento, cualquier día para ayudarte con tus
-                                necesidades de seguro.</p>
-                        </div>
-                        <div class="benefit-card">
-                            <i class="fas fa-dollar-sign fa-3x"></i>
-                            <h3>Planes Asequibles</h3>
-                            <p>Obtén la mejor protección sin afectar tu presupuesto con nuestros precios competitivos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <button type="submit" class="cta-btn">Obtener Cotización</button>
+              </form>
+            </div>
+          </div>
+        </section>
 
-
-            <!-- seguro -->
-            <section id="quote-section" class="quote-section">
-                <div class="container two-columns">
-                    <div class="image-column">
-                        <img src="https://images.pexels.com/photos/4161619/pexels-photo-4161619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Hogar">
-                    </div>
-                    <div class="form-column">
-                        <h2>Obtén tu Cotización de Seguro</h2>
-                        <form id="quoteForm">
-                            <div class="form-group">
-                                <label for="homeType">Tipo de Propiedad</label>
-                                <select id="homeType">
-                                    <option value="home">Casa</option>
-                                    <option value="apartment">Apartamento</option>
-                                    <option value="land">Terreno</option>
-                                    <option value="commercial">Local Comercial</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="year">Año de la Propiedad</label>
-                                <input type="number" id="year" placeholder="Ingresa el año de la propiedad" required />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="insuranceType">Tipo de Seguro</label>
-                                <select id="insuranceType">
-                                    <option value="basic">Seguro Básico</option>
-                                    <option value="full">Seguro Completo</option>
-                                </select>
-                            </div>
-
-                            <button type="submit" class="cta-btn">Obtener Cotización</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Cotización y detalle -->
-            <section id="quote-details" class="quote-details two-columns">
-                <div id="quote-result" class="quote-result card"></div>
-                <div id="insurance-details" class="insurance-details card"></div>
-            </section>
-        </div>
+        <!-- Cotización y detalle -->
+        <section id="quote-details" class="quote-details two-columns">
+          <div id="quote-result" class="quote-result card"></div>
+          <div id="insurance-details" class="insurance-details card"></div>
+        </section>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <h3>Seguro</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos del Servicio</a></li>
-                    <li><a href="#">Contáctanos</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <h3>Seguro</h3>
+          <ul class="footer-links">
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos del Servicio</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
         </div>
-        <p>&copy; 2024 Seguro. Todos los Derechos Reservados.</p>
+      </div>
+      <p>&copy; 2024 Seguro. Todos los Derechos Reservados.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
