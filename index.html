@@ -180,9 +180,15 @@
     <!-- Modal -->
     <div id="propertyModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title">Detalles de la Propiedad</h2>
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-banner">
+                <img id="modal-banner-image" src="" alt="Imagen de la Propiedad" />
+            </div>
+
             <div class="modal-body">
+                <h2 id="modal-title">Detalles de la Propiedad</h2>
                 <div class="property-description">
                     <p id="property-description"></p>
                 </div>
@@ -193,6 +199,7 @@
             </div>
         </div>
     </div>
+    
 
 
     <script src="script.js"></script>

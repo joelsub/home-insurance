@@ -462,18 +462,36 @@
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
-    padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 600px;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
+.modal-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f1f1f1a8;
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+.close i{
+    color: #000 !important;
 }
 
 .close:hover, .close:focus {
@@ -486,6 +504,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 1rem !important;
 }
 
 .insurance-details-grid {
