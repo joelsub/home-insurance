@@ -256,13 +256,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // muestra detalle de seguro
     basicInsurance.innerHTML = `
           <h3>Seguro Básico</h3>
-          <p>Precio por año: <strong>UF ${basicPrice}</strong></p>
+          <p>Precio por año: <strong>$${basicPrice}</strong></p>
           <p>Incluye cobertura contra daños por fuego, humo, fugas de agua y asistencia legal.</p>
       `;
 
     fullInsurance.innerHTML = `
           <h3>Seguro Completo</h3>
-          <p>Precio por año: <strong>UF ${fullPrice}</strong></p>
+          <p>Precio por año: <strong>$${fullPrice}</strong></p>
           <p>Incluye todo el seguro básico, más cobertura contra desastres naturales y robos.</p>
           <div class="choice">
                             <i class="fas fa-star"></i>
