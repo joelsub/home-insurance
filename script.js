@@ -132,15 +132,24 @@ Property.prototype.getDescription = function () {
 
 // Array de propiedades
 const properties = [
-  new Property("Departamento", 2, 2, "55 m²", 2023, "Independencia", "UF 3.332", "Activa Plaza Chacabuco", "https://plus.unsplash.com/premium_photo-1683133660598-3ebeb26769ba?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-  new Property("Casa", 3, 3, "120 m²", 2021, "La Florida", "UF 6.500", "Villa Los Robles", "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-  new Property("Terreno", 0, 0, "500 m²", 2020, "Colina", "UF 2.000", "Parcelas del Sol", "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-  new Property("Local Comercial", 0, 1, "70 m²", 2022, "Providencia", "UF 4.500", "Comercial Plaza Central", "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-  new Property("Departamento", 1, 1, "40 m²", 2020, "Las Condes", "UF 3.100", "Residencial Alto Las Condes", "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-  new Property("Casa", 4, 3, "200 m²", 2020, "Ñuñoa", "UF 9.500", "Condominio Ñuñoa", "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-  new Property("Terreno", 0, 0, "1000 m²", 2021, "Pudahuel", "UF 1.800", "Terrenos Pudahuel Norte", "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-  new Property("Departamento", 3, 2, "75 m²", 2022, "Santiago Centro", "UF 4.000", "Residencial Santiago Centro", "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-  new Property("Local Comercial", 0, 1, "50 m²", 2023, "Vitacura", "UF 5.200", "Comercial Vitacura Norte", "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+  new Property("Departamento", 2, 2, "55 m²", 2023, "Independencia", "UF 3.332", "Activa Plaza Chacabuco", 
+    "https://images.pexels.com/photos/11327497/pexels-photo-11327497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+  new Property("Casa", 3, 3, "120 m²", 2021, "La Florida", "UF 6.500", "Villa Los Robles", 
+    "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+  new Property("Terreno", 0, 0, "500 m²", 2020, "Colina", "UF 2.000", "Parcelas del Sol", 
+    "https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+  new Property("Local Comercial", 0, 1, "70 m²", 2022, "Providencia", "UF 4.500", "Comercial Plaza Central", 
+    "https://images.pexels.com/photos/9816754/pexels-photo-9816754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+  new Property("Departamento", 1, 1, "40 m²", 2020, "Las Condes", "UF 3.100", "Residencial Alto Las Condes", 
+    "https://images.pexels.com/photos/12903678/pexels-photo-12903678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+  new Property("Casa", 4, 3, "200 m²", 2020, "Ñuñoa", "UF 9.500", "Condominio Ñuñoa", 
+    "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+  new Property("Terreno", 0, 0, "1000 m²", 2021, "Pudahuel", "UF 1.800", "Terrenos Pudahuel Norte", 
+    "https://images.pexels.com/photos/4448229/pexels-photo-4448229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+  new Property("Departamento", 3, 2, "75 m²", 2022, "Santiago Centro", "UF 4.000", "Residencial Santiago Centro", 
+    "https://plus.unsplash.com/premium_photo-1661962637032-f1e8df6d8c5f?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+  new Property("Local Comercial", 0, 1, "50 m²", 2023, "Vitacura", "UF 5.200", "Comercial Vitacura Norte", 
+    "https://images.pexels.com/photos/1402407/pexels-photo-1402407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
 ];
 
 // carga al dom las propiedades

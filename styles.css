@@ -86,7 +86,7 @@
 
 
   .hero {
-      height: 100vh;
+      height: 70vh;
       background: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
       display: flex;
       justify-content: center;
@@ -434,7 +434,7 @@
 }
 .property-type{
     position: absolute;
-    bottom: 16px;
+    bottom: 8px;
     right: 8px;
     z-index: 2;
     background-color: #ffffffc4;
@@ -527,4 +527,8 @@
 .insurance-card p {
     margin: 5px 0;
     font-size: 14px;
+}
+
+h2{
+    font-size: 1.5rem !important;
 }
